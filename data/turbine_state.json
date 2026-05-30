@@ -1,0 +1,42 @@
+{
+  "WT-01": {
+    "main_bearing_temp_c": 115.0,
+    "gearbox_temp_c": 58.3,
+    "tower_vibration_hz": 2.1,
+    "rotor_rpm": 13.2,
+    "power_output_kw": 1725.0,
+    "nacelle_temp_c": 39.4
+  },
+  "WT-02": {
+    "main_bearing_temp_c": 74.9,
+    "gearbox_temp_c": 63.5,
+    "tower_vibration_hz": 3.8,
+    "rotor_rpm": 14.8,
+    "power_output_kw": 1890.0,
+    "nacelle_temp_c": 44.1
+  },
+  "WT-03": {
+    "main_bearing_temp_c": 82.4,
+    "gearbox_temp_c": 69.7,
+    "tower_vibration_hz": 5.6,
+    "rotor_rpm": 15.1,
+    "power_output_kw": 1935.0,
+    "nacelle_temp_c": 47.3
+  },
+  "WT-04": {
+    "main_bearing_temp_c": 69.2,
+    "gearbox_temp_c": 60.4,
+    "tower_vibration_hz": 2.9,
+    "rotor_rpm": 12.7,
+    "power_output_kw": 1655.0,
+    "nacelle_temp_c": 41.0
+  },
+  "WT-05": {
+    "main_bearing_temp_c": 77.1,
+    "gearbox_temp_c": 71.3,
+    "tower_vibration_hz": 4.7,
+    "rotor_rpm": 14.5,
+    "power_output_kw": 1810.0,
+    "nacelle_temp_c": 46.8
+  }
+}

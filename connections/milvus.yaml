@@ -1,0 +1,8 @@
+spec_version: v1
+kind: connection
+app_id: milvus_kb
+environments:
+  draft:
+    kind: basic
+    type: team
+    server_url: https://ffbe47d6-2f04-4c96-b0be-fdf8658d2a08.d2n23mhr0m94463g3tdg.lakehouse.ibmappdomain.cloud:31140

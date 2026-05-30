@@ -1,0 +1,6 @@
+pymupdf
+beautifulsoup4
+python-dotenv
+pymilvus
+sentence-transformers
+ibm-watsonx-orchestrate
