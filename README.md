@@ -94,7 +94,7 @@
 
 ---
 ## 결과 비디오
-<video src="./demo/demo.mov" controls width="50%"></video>
+<video src="./demo/demo.mp4" controls width="50%"></video>
 
 ### 기타 Test (Edge Case)
 #### 1. 다른 토픽 관련 질위 : 
@@ -276,6 +276,3 @@ WT-03을 즉시 정지해 주세요.
 | **Google Gemini** (Student Plan / Gemini 2.5 Flash) | 초기 아이디어 정리 및 시나리오 구성 |
 | **Claude Code** ($20 플랜 / Claude Sonnet) | 코드 생성, 디버깅, 오류 원인 분석, 문서 작성 |
 
-
-
-# idk-project
