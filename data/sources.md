@@ -10,6 +10,8 @@
 | 06 | 풍력 O&M 관리자 안전관리지침 2022 | 한국풍력산업협회 (KWEIA) | [링크](https://kweia.or.kr/bbs/board.php?bo_table=data_02&wr_id=31&page=2) | X| 내부 데모 목적.  |
 | 07 | 해외 풍력발전기 사고 예방, 안전 점검 기술 | 한국풍력산업협회 (KWEIA) | [링크]() | X | 내부 데모 목적.  |
 | 08 | 풍력 발전 설비 사고 현황 및 리스크 분석 | KB금융그룹 | [링크](https://www.kbinsure.co.kr/images/co_intrd/esg_mng/pdf/risk_control_guidebook10.pdf) | X | 내부 데모 목적.  |
-
+| 09 | Wind Turbine Regulations| Manomet Center for Conservation Sciences | [링크](https://www.manomet.org/wp-content/uploads/old-files/GuideToDraftingWindTurbineRegulations_Manomet_September2013.pdf) | X | 내부 데모 목적.  |
+| 10 | 풍력 발전 개요 | 금풍에너지 | [링크](http://www.inhaelec032.kr/4l/4l30_12.pdf) | X | 내부 데모 목적.  |
+| 11 | 풍력발전설비 관리규정 | 제주에너지공사 | [링크](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.jejuenergy.or.kr/index.php/board%3Fact%3Ddown%26seq%3D1392%26serial%3D1%26bd_bcid%3Drule%26page%3D&ved=2ahUKEwjtiYbE3-KUAxXysFYBHRbVEe0QFnoECBoQAQ&usg=AOvVaw0Mhij-gYgf7oQ6v_t1R1fE) | X | 내부 데모 목적.  |
 
 
