@@ -14,8 +14,7 @@ orchestrate connections set-credentials \
   --username "$MILVUS_USER" \
   --password "$MILVUS_PASSWORD"
 
-envsubst < knowledge_base/kb.yaml > /tmp/kb_expanded.yaml
-orchestrate knowledge-bases import -f /tmp/kb_expanded.yaml
+orchestrate knowledge-bases import -f knowledge_base/kb.yaml
 orchestrate knowledge-bases status -n scenario_kb
 
 orchestrate agents import -f agents/supervisor_agent.yaml

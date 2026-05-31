@@ -14,7 +14,7 @@ conversational_search_tool:
       milvus:
         grpc_host: ffbe47d6-2f04-4c96-b0be-fdf8658d2a08.d2n23mhr0m94463g3tdg.lakehouse.ibmappdomain.cloud
         grpc_port: "31140"
-        database: $MILVUS_DATABASE
+        database: candidate02_l9x2n8pr
         collection: scenario_chunks
         index: embedding
         embedding_model_id: intfloat/multilingual-e5-large
@@ -30,7 +30,11 @@ conversational_search_tool:
     enabled: true
     model_id: groq/openai/gpt-oss-120b
     prompt_instruction: |
-      Answer only from retrieved Milvus chunks. Cite source_url, page, and chunk_id.
+      Answer only from retrieved Milvus chunks.
+      For each claim, cite using ONLY the exact title (PDF filename) and page number from the retrieved metadata.
+      Format: [문서명, p.{page}]
+      Do NOT include chunk_id — do not invent or guess it.
+      Do NOT cite source_url.
       If evidence is insufficient, say what is missing.
     max_docs_passed_to_llm: 5
     generated_response_length: Moderate

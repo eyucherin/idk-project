@@ -129,11 +129,15 @@ def load_document(path: Path) -> list[dict]:
     raise ValueError(f"Unsupported file type: {path.suffix}")
 
 
+MIN_CHUNK_LEN = 100  # discard header-only / near-empty pages
+
 def chunk_text(text: str) -> list[str]:
     chunks = []
     start = 0
     while start < len(text):
-        chunks.append(text[start : start + CHUNK_SIZE])
+        chunk = text[start : start + CHUNK_SIZE]
+        if len(chunk.strip()) >= MIN_CHUNK_LEN:
+            chunks.append(chunk)
         start += CHUNK_SIZE - CHUNK_OVERLAP
     return chunks
 

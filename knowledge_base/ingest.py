@@ -4,6 +4,7 @@ Milvus ingestion script: orchestrates PDF/HTML → Milvus end-to-end.
 
 import argparse
 import sys
+import unicodedata
 from pathlib import Path
 
 from pymilvus import Collection, utility
@@ -43,18 +44,20 @@ def ingest_document(
     model: SentenceTransformer,
     collection: Collection,
 ) -> tuple[int, int]:
-    existing = get_existing_chunk_ids(collection, doc_path.name)
+    name = unicodedata.normalize("NFC", doc_path.name)
+    stem = unicodedata.normalize("NFC", doc_path.stem)
+    existing = get_existing_chunk_ids(collection, name)
 
     sections = load_document(doc_path)
     all_chunks = []
     for section in sections:
         for j, text in enumerate(chunk_text(section["text"])):
-            chunk_id = f"{doc_path.stem}_p{section['page']}_c{j}"
+            chunk_id = f"{stem}_p{section['page']}_c{j}"
             if chunk_id in existing:
                 continue
             all_chunks.append({
                 "text": text,
-                "source": doc_path.name,
+                "source": name,
                 "source_url": source_url,
                 "page": section["page"],
                 "chunk_id": chunk_id,
