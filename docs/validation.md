@@ -6,4 +6,5 @@
 
 ## 데모 영상
 
-<video src="../demo/demo.mov" controls width="50%"></video>
+> GitHub 파일 크기 제한으로 인해 데모 영상은 별도 파일로 제출합니다.
+[데모 영상](demo/demo.mp4)
