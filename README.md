@@ -88,13 +88,16 @@
 |---|---|---|---|
 | Q1 | WT-01이 올해 생산한 전력량을 알려주세요 | Python tool (`calculate_turbine_energy`) | `total_energy_kwh: 5,830,500` / `total_energy_mwh: 5830.5` / `operating_hours_ytd: 3380` |
 | Q2 | O&M 관리자가 따라야 할 안전 관리 지침을 알려주세요 | Milvus RAG (`풍력O&M_관리자 안전관리지침_2022`) | 원문 인용 + `[문서명, 페이지, chunk_id]` 출처 |
-| Q3 | 1996년부터 발생한 풍력발전 관련 사고 현황을 알려주세요. | Milvus RAG (`해외_풍력발전기_사고_예방_안전_점검_기술.pdf`) | 원문 인용 + chunk_id 출처 |
+| Q3 | 풍력발전과 관련하여 어떤 사고들이 발생했나요? 주요 사고 유형을 알려주세요. | Milvus RAG (`해외_풍력발전기_사고_예방_안전_점검_기술.pdf`) | 원문 인용 + chunk_id 출처 |
 | Q4 | WT-03의 상태와 관련 안전 절차 알려주세요 | Python tool + RAG 복합 | `overall_priority: CRITICAL` / `suggested_action: shutdown_turbine` + RAG 안전 절차 인용 |
 | Q5 | WT-03를 즉시 정지해 주세요 | Python tool (`shutdown_turbine`) | 확인 요청 → 사용자 승인 후 →`rotor_rpm: 0` / `power_output_kw: 0` / `tower_vibration_hz: 0` / `main_bearing_temp_c: 25.0` |
 
 ---
 ## 결과 비디오
-<video src="./demo/demo.mp4" controls width="50%"></video>
+### Demo Video
+
+> GitHub 파일 크기 제한으로 인해 데모 영상은 별도 파일로 제출합니다.
+[데모 영상](demo/demo.mp4)
 
 ### 기타 Test (Edge Case)
 #### 1. 다른 토픽 관련 질위 : 
